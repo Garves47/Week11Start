@@ -56,9 +56,6 @@ h2 {
     color: cornflowerblue;
     text-align: center;
 }
-ul { 
-    display: none; 
-}
 p {
     text-align: center;
 }
@@ -86,4 +83,14 @@ p {
   /* Change the link color to #111 (black) on hover */
   .menu-li a:hover {
     background-color: cornflowerblue;
+  }
+
+  .hidden{
+    display: none;
+  }
+  #image_list{
+    display: none;
+  }
+  #main-image{
+    max-width:300px;
   }
