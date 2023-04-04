@@ -66,16 +66,17 @@ const onSubmit = (evt) => {
   }
 
   if (!formErrors) {
-    $("#user_dob").textContent = dob.toDateString();
+    // $("#user_dob").textContent = dob.toDateString();
 
     $("#user_password_last_changed").textContent = today.toDateString();
 
-    $("#user_first_name").textContent = $("#first_name");
-    $("#user_last_name").textContent = $("#last_name");
-    $("#user_email").textContent = $("#email");
-  }
+  //  $("#user_last_name").textContent = $("#last_name").value;
+    // $("#user_email").textContent = $("#email").value;
 
-  evt.preventDefault();
+    $("#profile_form").submit();
+  }else{
+    evt.preventDefault();
+  }
 };
 
 document.addEventListener("DOMContentLoaded", () => {
